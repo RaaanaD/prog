@@ -1,0 +1,122 @@
+
+.body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+* {
+    max-width: 100%;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+
+header {
+    background: url(../img/titleback.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+header h1{
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.a {
+    background-color:rgb(241, 240, 206);
+    font-size: 30px;
+}
+
+header p {
+    font-size: 20px;
+    height: 40px;
+    margin: 10px auto;
+    padding:0 0 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+main{
+    border-bottom:1px solid #ccc;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+
+
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:80px;
+    margin: 30px auto;
+}
+
+
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+.gu {
+
+    background-color:deepskyblue;
+
+}
+
+.choki {
+    background-color:crimson;
+
+}
+
+.par {
+    background-color:chartreuse;
+}
+
+li:hover{
+    opacity: 0.5;
+    color:#fff;
+}
+
+.b {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top:90px;
+    text-align: center;   
+}
+
+.c {
+    background:linear-gradient(transparent 60%, #ff6 60%);
+}
+
+.d {
+    text-align: center; 
+    font-size:50px;
+    color: white;
+    font-weight: bold;
+    background-color:tomato;
+}
