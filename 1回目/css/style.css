@@ -1,6 +1,5 @@
-
 .body {
-    width: 1000px;
+    width: 700px;
     margin: 0 auto;
 }
 
@@ -21,12 +20,13 @@ header {
     background: url(../img/titleback.jpeg);
     background-position: center;
     background-size: cover;
+    height: 220px;
 
 }
 
 header h1{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -42,15 +42,12 @@ header p {
     margin: 10px auto;
     padding:0 0 10px 0;
     text-align: center;
-    border-bottom: 1px solid #ccc;
 }
 
-main{
-    border-bottom:1px solid #ccc;
-}
+
 footer{
     background-color: #fff;
-    border-bottom:1px solid #ccc;
+
     text-align: center;
 }
 
@@ -58,19 +55,20 @@ footer{
 p{
     font-size:200%;
     text-align: center;
-    border-bottom:1px solid #fff;
     height:80px;
     margin: 30px auto;
 }
 
 
 ul{
-    padding: 0;
+    padding: 10px 0 0 0;
     border-top: 1px solid #000000;
     display:table;  /* 定義 */
     table-layout: fixed;
     width:100%;
+    margin-top: 0;
 }
+
 li{
     list-style-type:none;
     border: 1px solid #666;
@@ -78,7 +76,8 @@ li{
     display:table-cell;  /* 定義 */
     cursor: pointer;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 50px; 
+    
 }
 
 
@@ -114,10 +113,19 @@ li:hover{
     background:linear-gradient(transparent 60%, #ff6 60%);
 }
 
-.d {
+.e {
     text-align: center; 
     font-size:50px;
     color: white;
     font-weight: bold;
     background-color:tomato;
+    margin-bottom: 30px;
+}
+
+#shori {
+    display: none;
+}
+
+#lose {
+    display: none;
 }
