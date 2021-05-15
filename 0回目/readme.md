@@ -1,4 +1,4 @@
-Name_ID:Dai Rinako_21<br>
+Name_ID：Dai Rinako_21<br>
 
 1.課題内容：<br>
 HTML及びCSSを用いて架空のHPサイト（チーズアカデミー）を作成しました。<br> 
