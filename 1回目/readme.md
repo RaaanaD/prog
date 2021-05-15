@@ -1,4 +1,4 @@
-Name_ID:Dai Rinako_21<br>
+Name_IDnumber:Dai Rinako_21<br>
 
 1.課題内容：<br>
 js,jquery,html,cssを用いてじゃんけんゲームアプリの作成をしました。<br>
