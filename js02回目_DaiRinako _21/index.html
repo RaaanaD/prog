@@ -8,8 +8,7 @@
 </head>
 <body>
 <header>
-<h1>〜何でも〜To do list ✌︎
-</h1>
+<h1>〜何でも〜To do list ✌︎</h1>
 </header>
 <main>
 
@@ -45,6 +44,7 @@
             </dd>
     </dl>
 
+
     <!-- <dl class="form_inner">
         <dt class="dai">■大分類選択</dt>
         <dd class="sentaku"><select name="text" id="key" class="sentaku" >         
@@ -64,36 +64,40 @@
         <li id ="save2">保存</li>
         <li id ="save3">保存</li>
         <li id="clear">取り消し</li>
+        <li id="clear2">取り消し</li>
+        <li id="clear3">取り消し</li>
         <!-- <li id="narabi">並び替え</li> -->
     </ul>
 </main>
 
 
 <table id="list">
-    <h5>■仕事ToDoリスト</h5>
+    <h5 class="job">■仕事ToDoリスト</h5>
     <div class="a">
         <p class="b">【重要度】</p>
         <p class="c">【〆期限日】</p>
         <p class="d">【ToDo内容】</p>
+        <p class="e">【実施済✔︎】</p>
     </div>
-
 </table>
 
 <table id="list2">
-    <h5>■家事ToDoリスト</h5>
-    <div class="a">
-        <p class="b">【重要度】</p>
-        <p class="c">【〆期限日】</p>
-        <p class="d">【ToDo内容】</p>
+    <h5 class="house">■家事ToDoリスト</h5>
+    <div class="a2">
+        <p class="b2">【重要度】</p>
+        <p class="c2">【〆期限日】</p>
+        <p class="d2">【ToDo内容】</p>
+        <p class="e2">【実施済✔︎】</p>
     </div>
 </table>
    
 <table id="list3">
-    <h5>■その他ToDoリスト</h5>
-    <div class="a">
-        <p class="b">【重要度】</p>
-        <p class="c">【〆期限日】</p>
-        <p class="d">【ToDo内容】</p>
+    <h5 class="other">■その他ToDoリスト</h5>
+    <div class="a3">
+        <p class="b3">【重要度】</p>
+        <p class="c3">【〆期限日】</p>
+        <p class="d3">【ToDo内容】</p>
+        <p class="e3">【実施済✔︎】</p>
     </div>
 </table>
 
@@ -106,14 +110,23 @@
         $('[id=save2]').hide();
         $('[id=save3]').hide();
         $('[id=save]').show();
+        $('[id=clear2]').hide();
+        $('[id=clear3]').hide();
+        $('[id=clear]').show();
         } else if ($('[id=house]').prop('checked')) {
         $('[id=save]').hide();
         $('[id=save3]').hide();
         $('[id=save2]').show();
+        $('[id=clear]').hide();
+        $('[id=clear3]').hide();
+        $('[id=clear2]').show();
         } else {
         $('[id=save]').hide();
         $('[id=save2]').hide();
-        $('[id=save3]').show();           
+        $('[id=save3]').show();
+        $('[id=clear]').hide();
+        $('[id=clear2]').hide();
+        $('[id=clear3]').show();               
         }
     });
     });
@@ -135,9 +148,10 @@
 
         const html = `
         <tr>
-            <th>${zyuyo}</th>
-            <th>${date}</th>
-            <td>${value}</td>
+            <th class="t">${zyuyo}</th>
+            <th class="t2">${date}</th>
+            <td class="t3">${value}</td>
+            <td class="t4"><input type="checkbox" /></td>
         </tr>
         `
         $("#list").append(html);
@@ -166,9 +180,10 @@
 
         const html = `
         <tr>
-            <th>${zyuyo}</th>
-            <th>${date}</th>
-            <td>${value}</td>
+            <th class="t">${zyuyo}</th>
+            <th class="t2">${date}</th>
+            <td class="t3">${value}</td>
+            <td class="t4"><input type="checkbox" /></td>
         </tr>
         `
         $("#list2").append(html);
@@ -196,9 +211,10 @@
 
         const html = `
         <tr>
-            <th>${zyuyo}</th>
-            <th>${date}</th>
-            <td>${value}</td>
+            <th class="t">${zyuyo}</th>
+            <th class="t2">${date}</th>
+            <td class="t3">${value}</td>
+            <td class="t4"><input type="checkbox" /></td>
         </tr>
         `
         $("#list3").append(html);
@@ -214,10 +230,19 @@
     // localStorage.clear();
     localStorage.clear();
     $("#list").empty();
+    });
 
+     $("#clear2").on('click' ,function(){
+    // localStorage.clear();
+    localStorage.clear();
+    $("#list2").empty();
+    });
 
-
-     });
+     $("#clear3").on('click' ,function(){
+    // localStorage.clear();
+    localStorage.clear();
+    $("#list3").empty();
+    });
 
 //3.ページ読み込み：保存データ取得表示
   for(let i = 0; i<localStorage.length; i++){
