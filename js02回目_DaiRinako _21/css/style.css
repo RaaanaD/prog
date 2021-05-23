@@ -122,14 +122,29 @@ table {
   border: 1px solid #8dc3f5;
   width: 96%;
 }
-th {
-  width: 30%;
+.koumoku {
   font-size: 24px;
+  text-align: center;
   background-color: #d0e7fc;
   border-bottom: 1px solid #8dc3f5;
 }
+
+.koumoku2 {
+  font-size: 24px;
+  text-align: center;
+  background-color:bisque;
+  border-bottom: 1px solid #8dc3f5;
+}
+
+.koumoku3 {
+  font-size: 24px;
+  text-align: center;
+  background-color:darkseagreen;
+  border-bottom: 1px solid #8dc3f5;
+}
+
 td {
-  font-size: 16px;
+  font-size: 20px;
   background-color: rgb(241, 239, 239);
   border-bottom: 1px solid #8dc3f5;
 }

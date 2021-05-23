@@ -11,16 +11,6 @@
 <h1>〜何でも〜To do list ✌︎</h1>
 </header>
 <main>
-
-    <!-- <dl class="form_inner">
-        <dt class="dai" >◆ToDo重要度</dt>
-            <dd class="sentaku" id="zyuyo">
-            <label for="height" class="form_label"><input type="radio" name="btn" id="height" value="高い">★高い</label>
-            <label for="chu" class="form_label"><input type="radio" name="btn" id="chu" value="中">中</label>
-            <label for="low" class="form_label"><input type="radio" name="btn" id="low" value="その他">低い</label>
-            </dd>
-    </dl> -->
-    
     <dl class="form_inner">
         <dt class="dai">◆ToDo重要度</dt>
         <dd class="sentaku"><select name="text" id="zyuyo" class="sentaku" >         
@@ -44,17 +34,6 @@
             </dd>
     </dl>
 
-
-    <!-- <dl class="form_inner">
-        <dt class="dai">■大分類選択</dt>
-        <dd class="sentaku"><select name="text" id="key" class="sentaku" >         
-            <option value="家事">家事</option>
-            <option value="仕事">仕事</option>
-            <option value="その他">その他</option>
-        </select></dd>
-    </dl> -->
-
-    <!-- <input type="text" id="key"> -->
     <dl class="form_inner">
     <p>◆ToDo内容詳細、記載↓</p>
         <textarea id="memo" cols="30" rows="10"></textarea>
@@ -73,32 +52,33 @@
 
 <table id="list">
     <h5 class="job">■仕事ToDoリスト</h5>
-    <div class="a">
-        <p class="b">【重要度】</p>
-        <p class="c">【〆期限日】</p>
-        <p class="d">【ToDo内容】</p>
-        <p class="e">【実施済✔︎】</p>
-    </div>
+    <tr>
+        <th class="koumoku">重要度</th>
+        <th class="koumoku">〆期限日</th> 
+        <th class="koumoku">ToDo内容</th>
+        <th class="koumoku">実施済✔︎</th>
+    </tr>
+
 </table>
 
 <table id="list2">
     <h5 class="house">■家事ToDoリスト</h5>
-    <div class="a2">
-        <p class="b2">【重要度】</p>
-        <p class="c2">【〆期限日】</p>
-        <p class="d2">【ToDo内容】</p>
-        <p class="e2">【実施済✔︎】</p>
-    </div>
+    <tr>
+        <th class="koumoku2">重要度</th>
+        <th class="koumoku2">〆期限日</th> 
+        <th class="koumoku2">ToDo内容</th>
+        <th class="koumoku2">実施済✔︎</th>
+    </tr>
 </table>
    
 <table id="list3">
     <h5 class="other">■その他ToDoリスト</h5>
-    <div class="a3">
-        <p class="b3">【重要度】</p>
-        <p class="c3">【〆期限日】</p>
-        <p class="d3">【ToDo内容】</p>
-        <p class="e3">【実施済✔︎】</p>
-    </div>
+    <tr>
+        <th class="koumoku3">重要度</th>
+        <th class="koumoku3">〆期限日</th> 
+        <th class="koumoku3">ToDo内容</th>
+        <th class="koumoku3">実施済✔︎</th>
+    </tr>
 </table>
 
 
@@ -131,6 +111,7 @@
     });
     });
 
+
     $("#save").on('click' ,function(){
         const zyuyo = $("#zyuyo").val();
         const date = $("#date").val();
@@ -148,17 +129,13 @@
 
         const html = `
         <tr>
-            <th class="t">${zyuyo}</th>
-            <th class="t2">${date}</th>
+            <td class="t">${zyuyo}</td>
+            <td class="t2">${date}</td>
             <td class="t3">${value}</td>
             <td class="t4"><input type="checkbox" /></td>
         </tr>
         `
         $("#list").append(html);
-
-            // $("#date").val("");
-            // $("#key").val("");
-            // $("#memo").val("");
 
     }); 
 
@@ -180,18 +157,13 @@
 
         const html = `
         <tr>
-            <th class="t">${zyuyo}</th>
-            <th class="t2">${date}</th>
+            <td class="t">${zyuyo}</td>
+            <td class="t2">${date}</td>
             <td class="t3">${value}</td>
             <td class="t4"><input type="checkbox" /></td>
         </tr>
         `
         $("#list2").append(html);
-
-            // $("#date").val("");
-            // $("#key").val("");
-            // $("#memo").val("");
-
     }); 
 
     $("#save3").on('click' ,function(){
@@ -211,35 +183,32 @@
 
         const html = `
         <tr>
-            <th class="t">${zyuyo}</th>
-            <th class="t2">${date}</th>
+            <td class="t">${zyuyo}</td>
+            <td class="t2">${date}</td>
             <td class="t3">${value}</td>
             <td class="t4"><input type="checkbox" /></td>
         </tr>
         `
         $("#list3").append(html);
 
-            // $("#date").val("");
-            // $("#key").val("");
-            // $("#memo").val("");
-
     }); 
 
 
     $("#clear").on('click' ,function(){
-    // localStorage.clear();
     localStorage.clear();
     $("#list").empty();
     });
 
+    // $("#clear").on('focus' ,function(){
+    //     alert("仕事ToDoリスト記載内容は全て削除されます");
+    // }
+
      $("#clear2").on('click' ,function(){
-    // localStorage.clear();
     localStorage.clear();
     $("#list2").empty();
     });
 
      $("#clear3").on('click' ,function(){
-    // localStorage.clear();
     localStorage.clear();
     $("#list3").empty();
     });
@@ -258,7 +227,6 @@
     <td>'${value}'</td>
     </tr>`; 
 
-    // $("#list").val(value);
     $("#list").append(html);
 
   }
