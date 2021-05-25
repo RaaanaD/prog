@@ -1,4 +1,4 @@
-<title>〜何でも〜To do list ✌︎</title>
+■title　〜何でも〜To do list ✌︎
 
 1.課題内容：<br>
 自動で3種の項目に振り分けられるtodoリストの作成をしました。<br>
