@@ -1,0 +1,71 @@
+.body {
+    width: 600px;
+    margin: auto;
+}
+
+* {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: auto;
+    height: 500px;
+    background:url("imgs/usa.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    /* opacity: 0.8; */
+    border-radius: 50%;
+}
+
+
+.title{
+    padding-left: 40px;
+    color:blue;
+}
+
+.a {
+margin-left: 80px;
+margin-top:30px;
+margin-bottom:20px;
+color:blue;
+}
+
+.b {
+    padding-left: 50px;
+    margin-top:30px;
+    margin-bottom:20px;
+    color:blue;
+}
+.d {
+    padding-left: 150px;
+    margin-top:30px;
+    margin-bottom:20px;
+    color:blue;
+}
+.e2{
+    height: 70px;
+    width: 70px;
+    margin-left: 60px;
+    border: solid 1px black;
+
+}
+
+.e3{
+    height: 70px;
+    width: 70px;
+    margin-left: 60px;
+    border: solid 1px black;
+
+}
+
+.f {
+    padding-left: 150px;
+    margin-top:30px;
+    margin-bottom:20px;
+    color:blue;
+}
+

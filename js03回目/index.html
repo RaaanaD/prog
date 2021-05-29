@@ -4,29 +4,36 @@
 <head>
   <meta charset="utf-8" />
   <title>Chatアプリ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<div class="body">
   <!-- コンテンツ表示画面 -->
+  <h1 class="title">★Chatスペース★</h1>
 
-  <div>
+  <div class="a">
     <!-- 名前 -->
-    名前
+    <div>名前</div>
     <input type="text" id="username">
   </div>
 
-  <div>
+  <div class="b">
     <!-- テキストエリア -->
-    テキスト
+    <p class="c">テキスト</p>
     <textarea name="" id="text" cols="30" rows="10"></textarea>
   </div>
 
-  <div>
+  <div class="d">
     <!-- 送信ボタン -->
     <button id="send">送信</button>
   </div>
+ 
+  <div class="e">
+    <img class="e2" src="imgs/buke.png" alt="">
+    <img class="e3" src="imgs/caram.png" alt="">
+  </div>
 
-  <div>
+  <div class="f">
     <!-- 保存されたデータが表示される箇所 -->
     <div id="output"></div>
   </div>
@@ -105,6 +112,6 @@
   </script>
 
 
-</body>
+</div>
 
 </html>
