@@ -14,7 +14,7 @@ LINEbotも作成の上、ターミナルを用いてFirebase連携させよう�
 https://note.com/youheyhey0505/n/n5882853670de<br>
 
 LINEbotのFirebase連携の質問となります。<br>
-1回ターミナルにて認証させたFirebaseのプロジェクトを消去し、別のプロジェクトを<br>
+1番初めにターミナルにて認証させたFirebaseのプロジェクトを消去し、別のプロジェクトを<br>
 立ち上げて、新たに認証させようとしたら、初めに認証させたプロジェクトが<br>
 無いとの以下エラーが発生し続けました。<br>
 Error: Failed to get Firebase project dev20bot. Please make sure the project exists and your account has permission to access it.<br>
