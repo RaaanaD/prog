@@ -10,21 +10,12 @@ Firebaseを用いてでシンプルなチャットアプリを作成しました
 LINEbotも作成の上、ターミナルを用いてFirebase連携させようとしたが、上手くいかなかった。<br>
 
 3.質問・疑問：<br>
-■LINEbotのFirebase連携の参考にしたサイトは以下です。<br>
+Node.jsのインストールなどのため今回、Macのターミナルを直接操作してみたが、VScodeのターミナルを<br>
+利用した方が使い勝手など良いものなのでしょうか。<br>
+また、API連携の時によく利用されるプログラミング言語があれば何か知りたいです。<br>
+
+LINEbotのFirebase連携は以下のサイトを参考に上手くいかなかったですが、実施してみました。<br>
 https://note.com/youheyhey0505/n/n5882853670de<br>
-
-①LINEbotのFirebase連携の質問となります。<br>
-1番初めにターミナルにて認証させたFirebaseのプロジェクトを消去し、別のプロジェクトを<br>
-立ち上げて、新たに認証させようとしたら、初めに認証させたプロジェクトが<br>
-無いとの以下エラーが発生し続けました。<br>
-Error: Failed to get Firebase project dev20bot. Please make sure the project exists and your account has permission to access it.<br>
-参考サイトの　firebaseを初期化部分で上記エラーが発生しました。<br>
-新しく立ち上げたFirebaseプロジェクトとへの認証の変更を行うためには<br>
-どのようなターミナルへの書き込みが必要か可能であれば教えて下さい。<br>
-
-②パブリックにアップロードしない方が良い情報は、APIキーのみでしょうか。<br>
-それとも、FirebaseのauthDomainやdatabaseURLなどの情報もアップロードしない方が<br>
-良いでしょうか。<br>
 
 4.その他(感想、シェアしたいことなんでも)：<br>
 botの作成は今やノーコードでできる事が分かった。<br>
