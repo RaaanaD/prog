@@ -13,7 +13,7 @@ LINEbotも作成の上、ターミナルを用いてFirebase連携させよう�
 ■LINEbotのFirebase連携の参考にしたサイトは以下です。<br>
 https://note.com/youheyhey0505/n/n5882853670de<br>
 
-LINEbotのFirebase連携の質問となります。<br>
+①LINEbotのFirebase連携の質問となります。<br>
 1番初めにターミナルにて認証させたFirebaseのプロジェクトを消去し、別のプロジェクトを<br>
 立ち上げて、新たに認証させようとしたら、初めに認証させたプロジェクトが<br>
 無いとの以下エラーが発生し続けました。<br>
@@ -21,6 +21,10 @@ Error: Failed to get Firebase project dev20bot. Please make sure the project exi
 参考サイトの　firebaseを初期化部分で上記エラーが発生しました。<br>
 新しく立ち上げたFirebaseプロジェクトとへの認証の変更を行うためには<br>
 どのようなターミナルへの書き込みが必要か可能であれば教えて下さい。<br>
+
+②パブリックにアップロードしない方が良い情報は、APIキーのみでしょうか。<br>
+それとも、FirebaseのauthDomainやdatabaseURLなどの情報もアップロードしない方が<br>
+良いでしょうか。<br>
 
 4.その他(感想、シェアしたいことなんでも)：<br>
 botの作成は今やノーコードでできる事が分かった。<br>
