@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Solar Terminator</title>
+<style>html,body{height:100%;}body{padding:0;margin:0;background:#333;}#controll{position:relative;float:left;padding-left:10px;width:27%;height:470px;color:#fff;}h1{padding:0;margin:0;font-size:50%;color:white;}p{margin-bottom: 10px;margin:0;}button{width:60px;height:60px;background-color: #0B6125;color:white;}input[type=range]{padding: 0;}</style>
+</head>
+<body>
+
+
+<!-- MAP[START] -->
+<div id="myMap" style="position:relative;float:left;width:70%;height:98%;"></div>
+<div id="controll">
+    <h2>Solar Terminator</h2>
+    <p>年月日時によって地球上の太陽が当たらない場所の影と、マップ上の太陽のおおよその位置を計算して表しています。</p>
+    <p>
+        Year: <input id="YearSlider" type="range" min="1990" max="2050" oninput="DateUpdated()" onchange="DateUpdated()"> <span id="YearInfo"></span><br/>
+        Month: <input id="MonthSlider" type="range" min="0" max="11" oninput="DateUpdated()" onchange="DateUpdated()"> <span id="MonthInfo"></span><br />
+        Day: <input id="DaySlider" type="range" min="0" max="30" oninput="DateUpdated()" onchange="DateUpdated()"> <span id="DayInfo"></span><br />
+        Hour: <input id="HoursSlider" type="range" min="0" max="24" oninput="DateUpdated()" onchange="DateUpdated()"> <span id="HourInfo"></span>
+    </p>
+</div>
+<!-- MAP[END] -->
+
+  <!-- ※APIキー削除 jQuery&GoogleMapsAPI -->
+  <script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[APIキー削除]'
+    async defer></script>
+
+<script>
+    //Solar Terminator Sample
+    let map, terminator, sunPin;
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    function GetMap() {
+        map = new Microsoft.Maps.Map('#myMap', {
+            zoom: 1
+        });
+        //Register the custom module.
+        Microsoft.Maps.registerModule('SolarTerminatorModule', 'SolarTerminatorModule.js');
+        //Load the module.
+        Microsoft.Maps.loadModule('SolarTerminatorModule', function () {
+            //Create a terminator and add it to the map.
+            terminator = new SolarTerminator();
+            map.entities.push(terminator);
+            //Get the position of the sun and add a pushpin to the map to show it.
+            sunPin = new Microsoft.Maps.Pushpin(terminator.getSunLocation());
+            map.entities.push(sunPin);
+            SetSliderValues();
+        });
+    }
+    function SetSliderValues() {
+        const d = new Date();
+        //Set slider values.
+        document.getElementById('YearSlider').value = d.getFullYear();
+        document.getElementById('MonthSlider').value = d.getMonth();
+        document.getElementById('DaySlider').value = d.getDate();
+        document.getElementById('HoursSlider').value = d.getHours();
+        //Update info spans.
+        document.getElementById('YearInfo').innerText = d.getFullYear();
+        document.getElementById('MonthInfo').innerText = monthNames[d.getMonth()];
+        document.getElementById('DayInfo').innerText = d.getDate();
+        document.getElementById('HourInfo').innerText = d.getHours();
+    }
+    function DateUpdated() {
+        const year = parseInt(document.getElementById('YearSlider').value);
+        const month = parseInt(document.getElementById('MonthSlider').value);
+        const day = parseInt(document.getElementById('DaySlider').value);
+        const hour = parseInt(document.getElementById('HoursSlider').value);
+        //Create a date object from slider values.
+        const d = new Date(year, month, day, hour, 0, 0, 0);
+        //Update info spans.
+        document.getElementById('YearInfo').innerText = d.getFullYear();
+        document.getElementById('MonthInfo').innerText = monthNames[d.getMonth()];
+        document.getElementById('DayInfo').innerText = d.getDate();
+        document.getElementById('HourInfo').innerText = d.getHours();
+        //Update terminator and sun location pushpin.
+        terminator.setDateTime(d);
+        sunPin.setLocation(terminator.getSunLocation());
+    }
+
+</script>
+</body>
+</html>

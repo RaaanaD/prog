@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 32px;
+  width: 100%;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+h1 {
+  font-size: 150%;
+  background-color:rgba(96, 183, 226, 0.5);
+  text-align: center;
+}
+
+/* main {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+} */
+
+.syukusyo {
+  width: 60%;
+}
+
+
+ul {
+  padding: 0;
+  border-top: 1px solid #000000;
+  display: table; /* 定義 */
+  table-layout: fixed;
+  width: 96%;
+  font-size: 80%;
+  margin: 0 3%;
+  text-align: center;
+}
+li {
+  list-style-type: none;
+  border: 1px solid #666;
+  background-color: #fff;
+  display: table-cell; /* 定義 */
+  cursor: pointer;
+  color: #0d7dfd;
+}
+li:hover {
+  background: #0d7dfd;
+  color: #fff;
+}
+
+
+/* .dai {
+  font-size: 30px;
+  margin: 10px 3%;
+} */
+
+
+.sentaku {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  font-size: 25px;
+  width: 60%;
+  /* margin:5px 0 0 0; */
+  padding:5px 5px;
+}
+
+.form_label {
+  font-size: 25px;
+}
+
+input[type*="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 24px 0;
+  border: solid 1px #bfbfbf;
+  margin:10px 14px 24px 10px;
+  vertical-align: -24px;
+
+
+}
+
+input[type*="radio"]:checked {
+  border: solid 3px black;
+  background-color:skyblue;
+}
+
+
+
+
+#save {
+  display: none;
+}
+
+#save2 {
+  display: none;
+}
+
+#save3 {
+  display: none;
+}
+
+#clear {
+  display: none;
+}
+
+#clear2 {
+  display: none;
+}
+
+#clear3 {
+  display: none;
+}
+
+
+.a {
+  display: flex;
+  height: 50px;
+}
+
+.a2 {
+  display: flex;
+  height: 50px;
+}
+
+.a3 {
+  display: flex;
+  height: 50px;
+}
+
+.b, .b2, .b3 {
+  margin-left:5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.c, .c2, .c3 {
+  margin-left:7%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.d, .d2, .d3 {
+  margin-left:20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.e, .e2, .e3 {
+  margin-left:20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.subtitle {
+  margin-bottom: 0;
+  border-top:solid 1px grey;
+}
+
+#list {
+  background-color: blue;
+  margin-top: 0;
+}
+
+#list2 {
+  background-color: orangered;
+  margin-top: 0;
+}
+
+#list3 {
+background-color: green;
+margin-top: 0;
+}
+
+.job {
+  background:linear-gradient(transparent 10%,skyblue 60%);
+}
+
+.b, .c, .d, .e{
+  background:linear-gradient(transparent 10%,skyblue 60%);
+}
+
+.house {
+  background:linear-gradient(transparent 10%,pink 60%);
+}
+
+.b2, .c2, .d2, .e2{
+  background:linear-gradient(transparent 10%,pink 60%);
+}
+
+.other {
+  background:linear-gradient(transparent 10%,yellowgreen 60%);
+}
+
+.b3, .c3, .d3, .e3{
+  background:linear-gradient(transparent 10%,yellowgreen 60%);
+}
+
+.t {
+  width: 15%;
+  background-color: azure;
+}
+
+.t2 {
+  width: 20%;
+  background-color: azure;
+}
+
+.t3 {
+  width: 50%;
+}
+
+.t {
+  width: 15%;
+}
