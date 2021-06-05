@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 32px;
+  width: 100%;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+h1 {
+  font-size: 150%;
+  background-color:rgba(96, 183, 226, 0.5);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.nav-item>a {
+  color:blue;
+  text-decoration: none;
+  border-bottom: 1px solid blue;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.nav-item>a:hover {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.dai {
+  font-size: 25px;
+  background:linear-gradient(transparent 60%, #ff6 60%);
+  font-weight: 800;
+}
+
+.syukusyo {
+  width: 60%;
+  border: 1px solid #000000;
+}
+
+
+ul {
+  padding: 0;
+  display: table; /* 定義 */
+  table-layout: fixed;
+  width: 96%;
+  font-size: 50%;
+  margin: 0 3%;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  background-color: #fff;
+  display: table-cell; /* 定義 */
+  cursor: pointer;
+}
+
+
+.form_label {
+  font-size: 15px;
+}
+
+input[type*="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  /* margin: 0 0 24px 0; */
+  border: solid 1px #bfbfbf;
+  margin:10px 14px 24px 5px;
+  vertical-align: -25px;
+}
+
+input[type*="radio"]:checked {
+  border: solid 3px black;
+  background-color:skyblue;
+
+}
+
+#linebot2 {
+  display: none;
+}
+
+#solar2 {
+  display: none;
+}
+
+#directons2 {
+  display: none;
+}
+
+#string2 {
+  display: none;
+}
+
+
+h3 {
+  font-size: 30px;
+  background:linear-gradient(transparent 10%,skyblue 60%);
+}
+
+
+p {
+  font-size: 20px;
+}
