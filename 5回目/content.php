@@ -38,9 +38,11 @@ if(isset($_POST['playerHand'])){
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ドラ●もんキャラゲーム</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="style.css?v=2" type="text/css" />
@@ -53,7 +55,7 @@ if(isset($_POST['playerHand'])){
     <main>
         <h2 class="pc">コンピューター：<?= $pcHand ?></h2><br>
         <h1 class="res">結果は・・・<?= $shobu ?></h1>
-        <h3>あなた：<?= $playerHand ?></h3><br>
+        <h3>あなた：<?= $playerHand?></h3><br>
         <div class="shobu-box">
             <p><a class="red" href="index.php">>>もう一回勝負する</a></p>
         </div>
