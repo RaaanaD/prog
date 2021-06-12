@@ -2,7 +2,7 @@
 phpなどを用いて、じゃんけんゲームならぬシンプルな「ドラ●もんキャラゲーム」を作った。<br>
 力関係は[ジャイア● ＞ ●太、 ドラ●もん ＞ ジャイア●、 ●太 ＞ ドラ●もん]となっている。<br>
 以下画像の通り。<br>
-<img src="https://user-images.githubusercontent.com/83898574/121785590-a0322900-cbf5-11eb-8dd0-f312f42edcca.png" width="700px">
+<img src="https://user-images.githubusercontent.com/83898574/121785590-a0322900-cbf5-11eb-8dd0-f312f42edcca.png" width="800px">
 
 2.工夫した点・こだわった点：<br>
 じゃんけんゲームの思想をアニメキャラに投影させて「ドラ●もんキャラゲーム」を作った点。<br>
