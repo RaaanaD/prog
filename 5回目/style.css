@@ -120,10 +120,10 @@ a:hover {
     text-decoration: underline;
 }
 
-footer  {
+footer {
     color: #fff;
     background-color: #5e6c77;
-    height: 100px;
+    height: 120px;
     text-align: left;
     margin-top: 30px;
     line-height: 100px;
@@ -133,15 +133,36 @@ footer  {
 .footer {
     height: 50px;
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 20px;
+    line-height:75px;
 }
 
+.subfooter {
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height:65px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
 
 .footer2 {
     height: 50px;
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 25px;
     font-weight: bold;
+    line-height:75px;
+}
+
+.subfooter2 {
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height:75px;
 }
 
 .form-box input[type="radio"] {

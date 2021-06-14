@@ -37,6 +37,18 @@ if(isset($_POST['playerHand'])){
 
 ?>
 
+<?php
+//関数を定義
+$d = date("s");
+if($d <= 20){
+    $logo = '<img class="logo" src="https://pbs.twimg.com/media/DORlWt1VwAA-VKN.jpg:small" width="40">';
+}else if($d >= 20 && $d <= 40){
+    $logo = '<img class="logo" src="https://i.pinimg.com/originals/52/dc/7c/52dc7c7ecfa7810567e36d06ed351a44.png" width="40">';
+}else{
+    $logo = '<img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCZVKkzYXskeFvyNXnVyNRQ6-r4cY4C7TQGr6uDHgWCoVyk_WZaYNraxA0QNuWO6pSSHE&usqp=CAU" width="40">';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -50,7 +62,7 @@ if(isset($_POST['playerHand'])){
 <body>
 <div id="wrapper">
     <header>
-    <div class="header-logo"><img src="https://i.pinimg.com/originals/52/dc/7c/52dc7c7ecfa7810567e36d06ed351a44.png" width="40" >ドラ●もんキャラゲーム</div>
+    <div class="header-logo"><?= $logo ?>ドラ●もんキャラゲーム</div>
     </header>
     <main>
         <h2 class="pc">コンピューター：<?= htmlspecialchars($pcHand, ENT_QUOTES); ?></h2><br>
@@ -62,6 +74,7 @@ if(isset($_POST['playerHand'])){
     </main>
     <footer>
         <p class="footer2">💡勝敗を分ける力関係 👉 [ジャイア● ＞ ●太、 ドラ●もん ＞ ジャイア●、 ●太 ＞ ドラ●もん]</p>
+        <p class="subfooter2">🎈ミニゲームの答え🎈：タイトルアイコン箇所</p>
     </footer>
 </div>
 </body>
