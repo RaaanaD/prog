@@ -51,6 +51,7 @@
      <input type="submit" class="btn" value="送信">
     </fieldset>
   </div>
+  <h3>＊ご利用登録頂きましたら左上のログインよりお進み下さい</h3>
 </form>
 <!-- Main[End] -->
 
