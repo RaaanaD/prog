@@ -32,6 +32,7 @@
      <input type="submit" class="btn" value="ログイン">
     </fieldset>
   </div>
+  <h3>＊ご利用登録がお済みではない方は先ずはご登録下さい</h3>
 </form>
 <!-- Main[End] -->
 
