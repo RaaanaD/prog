@@ -11,12 +11,12 @@ php、SQLを連携させて、ユーザ登録、ログイン機能を実装し�
 insert.phpで以下エラーが発生している。原因、解決策やヒントを可能であればお教え頂ければ<br>
 幸いです。<br>
 
-Warning: Undefined array key "u_name" in /Applications/MAMP/htdocs/php_db2/insert.php on line 5<br>
-Warning: Undefined array key "u_id" in /Applications/MAMP/htdocs/php_db2/insert.php on line 6<br>
-Warning: Undefined array key "u_pw" in /Applications/MAMP/htdocs/php_db2/insert.php on line 7<br>
+Warning: Undefined array key "u_name" in /Applications/MAMP/htdocs/7回目/insert.php on line <br>
+Warning: Undefined array key "u_id" in /Applications/MAMP/htdocs/7回目/insert.php on line 6<br>
+Warning: Undefined array key "u_pw" in /Applications/MAMP/htdocs/7回目/insert.php on line 7<br>
 Fatal error: Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'u_name'<br>
-cannot be null in /Applications/MAMP/htdocs/php_db2/insert.php:36 Stack trace: #0 /Applications/MAMP/htdocs/php_db2/insert.php(36)<br>
-: PDOStatement->execute() #1 {main} thrown in /Applications/MAMP/htdocs/php_db2/insert.php on line 36<br>
+ cannot be null in /Applications/MAMP/htdocs/7回目/insert.php:36 Stack trace: #0 /Applications/MAMP/htdocs/7回目/insert.php(36):<br>
+PDOStatement->execute() #1 {main} thrown in /Applications/MAMP/htdocs/7回目/insert.php on line 36<br>
 
 4.その他(感想、シェアしたいことなんでも)：<br>
 課題を通してphp、SQLの勉強ができたと感じる。<br>
