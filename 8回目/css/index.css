@@ -1,0 +1,106 @@
+.navbar {
+    background-color:rgb(14, 145, 238);
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    font-size:30px;
+}
+
+.jumbotron{
+    font-size: 30px;
+    /* background-color:Azure; */
+    text-align: center;
+
+}
+
+.form {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form_a{
+    font-size: 40px;
+    font-weight: bold;  
+}
+
+.form1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.form2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.form4 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.form5 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.form6 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 25px;
+    margin-top: 20px;
+    background-color: skyblue;
+}
+
+.btn:hover {
+    font-size: 35px;
+}
+
+.haikei{
+    background:url("../img/dora.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    opacity: 0.9;
+    height: auto;
+}
+
+.c{
+    background-color:aliceblue;
+}
+
+.b{
+    height:150px;
+}
+
+.b2{
+    height:220px;
+}
+
+.a{
+    width: 550px;
+    background-color:aliceblue;
+}
+
+.form { 
+    text-align: right;
+}
