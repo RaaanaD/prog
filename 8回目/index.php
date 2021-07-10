@@ -12,8 +12,10 @@
 <header>
   <nav class="navbar">
     <div class="container-fluid">
-    <div class="navbar_header"><a class="navbar-brand" href="login.php">管理者用</a></div>
-    <div class="navbar_header"><a class="navbar-brand" href="login_user.php">ログイン</a></div>
+      <div class="navbar_header">
+        <a class="navbar-brand" href="login_user.php">ログイン</a>
+        <a class="navbar-brand" href="login.php">　管理者用ページ</a>
+      </div>
     </div>
   </nav>
 </header>
