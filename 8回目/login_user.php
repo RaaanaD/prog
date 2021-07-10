@@ -17,6 +17,7 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="index.php">ご利用登録</a>
+        <a class="navbar-brand" href="login.php">　管理者用ページ</a>
       </div>
     </div>
   </nav>
